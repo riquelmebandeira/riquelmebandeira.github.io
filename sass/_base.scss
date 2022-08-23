@@ -13,3 +13,32 @@ html {
 body {
   box-sizing: border-box;
 }
+
+//////////////////////////////
+// TIPOGRAFIA
+
+.heading {
+  font-family: $font-display;
+
+  &--3 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: $color-grey-dark
+  }
+
+  &--4 {
+    font-weight: 400;
+    font-size: 2rem;
+    color: $color-grey-light
+  }
+}
+
+//////////////////////////////
+// CLASSES UTILITÁRIAS
+
+.mb-sm { margin-bottom: 4rem };
+.mb-md { margin-bottom: 6rem };
+.mb-lg { margin-bottom: 8rem };
+.mb-hg { margin-bottom: 20rem };
+
+
