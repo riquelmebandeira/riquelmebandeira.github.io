@@ -20,6 +20,48 @@
     grid-row-gap: 4.7rem;
     justify-items: center; }
 
+.footer {
+  padding: 10rem;
+  padding-bottom: 0;
+  font-size: 1.8rem;
+  font-family: 'DM Sans', sans-serif;
+  color: #42446E; }
+  .footer__contact-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem 0; }
+  .footer__contact-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 50%;
+    flex-wrap: wrap; }
+  .footer__nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6rem 0; }
+
+.horizontal-line {
+  background-color: rgba(102, 102, 102, 0.3);
+  height: 3px;
+  width: 100%;
+  display: block; }
+
+.logo-box {
+  text-align: center;
+  font-family: "Poppins", sans-serif; }
+  .logo-box .logo {
+    font-size: 3.5rem;
+    letter-spacing: 2px; }
+  .logo-box span {
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    display: block; }
+
 *,
 *::before,
 *::after {
@@ -59,6 +101,14 @@ body {
 
 .mb-hg {
   margin-bottom: 20rem; }
+
+.inline-list {
+  display: flex;
+  list-style: none; }
+  .inline-list a:link,
+  .inline-list a:visited {
+    color: #42446E;
+    text-decoration: none; }
 
 .card {
   height: 56rem;
@@ -102,3 +152,14 @@ body {
     pointer-events: none;
     color: #666666;
     text-decoration: none; }
+
+.nav ul {
+  flex-wrap: wrap; }
+
+.nav li:not(:last-child) {
+  margin-right: 5rem; }
+
+.contact-icons {
+  font-size: 3rem; }
+  .contact-icons li:not(:last-child) {
+    margin-right: 2rem; }

@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+
   <title>Portfólio | Riquelme Bandeira - Desenvolvedor Full Stack</title>
 </head>
 <body>
   <header class="header">Header</header>
 
-  <section class="section-stack">
+  <section class="section-stack" id="stack">
     <h3 class="heading heading--2">Minha Stack Tech</h3>
     <h4 class="heading heading--4 mb-lg">Tecnologias que eu costumo usar</h4>
     <div class="technologies">
@@ -32,7 +37,7 @@
     </div>
   </section>
 
-  <section class="projects">
+  <section class="projects" id="projects">
     <h3 class="heading heading--2 mb-sm">Projetos</h3>
     <h4 class="heading heading--4 mb-lg">Algumas coisas que eu construí até aqui</h4>
     <div class="projects__grid">
@@ -152,6 +157,39 @@
     </div>
   </section>
 
-  <footer class="footer">Footer</footer>
+  <footer class="footer">
+    <div class="footer__contact-box">
+      <div class="logo-box">
+        <h3 class="logo">{RB}<span>rbandeira</span></h3>
+      </div>
+
+      <ul class="footer__contact-list inline-list">
+        <li><span>(81) 98111-0864</span></li>
+        <li><span>riquelmebandeira1@outlook.com</span></li>
+        <li>
+          <ul class="contact-icons inline-list">
+            <li><a href="" class="fa fa-github"></a></li>
+            <li><a href="" class="fa fa-envelope"></a></li>
+            <li><a href="" class="fa fa-linkedin"></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <span class="horizontal-line">&nbsp;</span>
+
+    <div class="footer__nav-box">
+      <nav class="nav">
+        <ul class="inline-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">Designed by Pavan MG and built by Riquelme Bandeira with	&#10084; & Coffee</p>
+    </div>
+  </footer>
 </body>
 </html>

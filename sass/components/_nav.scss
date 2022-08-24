@@ -1,0 +1,11 @@
+.nav {
+  ul {
+    flex-wrap: wrap;
+  }
+
+  li {
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+  }
+}

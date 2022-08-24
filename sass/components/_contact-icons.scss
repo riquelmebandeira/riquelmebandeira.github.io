@@ -1,0 +1,9 @@
+.contact-icons {
+  font-size: 3rem;
+
+  li {
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}

@@ -26,3 +26,52 @@
     justify-items: center;
   }
 }
+
+.footer {
+  padding: 10rem;
+  padding-bottom: 0;
+  font-size: 1.8rem;
+  font-family: 'DM Sans', sans-serif;
+  color: $color-grey-dark;
+
+  &__contact-box {
+    @include flex-total-center;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+  }
+
+  &__contact-list {
+    @include flex-total-center;
+    flex: 0 0 50%;
+    flex-wrap: wrap;
+  }
+
+  &__nav-box {
+    @include flex-total-center;
+    flex-wrap: wrap;
+    padding: 6rem 0;
+  }
+}
+
+.horizontal-line {
+  background-color: rgba($color-grey-light, .3);
+  height: 3px;
+  width: 100%;
+  display: block;
+}
+
+.logo-box {
+  text-align: center;
+  font-family: $font-display;
+
+  .logo {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+  }
+
+  span {
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    display: block;
+  }
+}

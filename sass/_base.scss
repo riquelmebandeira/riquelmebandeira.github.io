@@ -47,4 +47,13 @@ body {
 .mb-lg { margin-bottom: 8rem };
 .mb-hg { margin-bottom: 20rem };
 
+.inline-list {
+  display: flex;
+  list-style: none;
 
+  a:link,
+  a:visited {
+    color: $color-grey-dark;
+    text-decoration: none;
+  }
+}
