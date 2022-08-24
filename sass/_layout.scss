@@ -1,3 +1,23 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 3rem 15rem;
+
+  font-size: 1.8rem;
+  font-family: $font-display;
+  color: $color-grey-dark;
+
+  div {
+    margin-right: auto;
+  }
+
+  nav {
+    li {
+      margin-right: 5rem;
+    }
+  }
+}
+
 .section-stack {
   text-align: center;
   padding: 10rem;
@@ -31,7 +51,7 @@
   padding: 10rem;
   padding-bottom: 0;
   font-size: 1.8rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: $font-display;
   color: $color-grey-dark;
 
   &__contact-box {

@@ -1,3 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 3rem 15rem;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  color: #42446E; }
+  .header div {
+    margin-right: auto; }
+  .header nav li {
+    margin-right: 5rem; }
+
 .section-stack {
   text-align: center;
   padding: 10rem; }
@@ -24,7 +36,7 @@
   padding: 10rem;
   padding-bottom: 0;
   font-size: 1.8rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #42446E; }
   .footer__contact-box {
     display: flex;
