@@ -1,7 +1,9 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 3rem 15rem;
+  padding: 3rem 0;
+  max-width: 114rem;
+  margin: auto;
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   color: #42446E; }
@@ -14,7 +16,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8rem 15rem; }
+  padding: 8rem 0;
+  max-width: 114rem;
+  margin: auto; }
   .about__name {
     background-image: linear-gradient(to right, #00C0FD, #6d5dde);
     -webkit-background-clip: text;
@@ -29,11 +33,13 @@
 
 .stack {
   text-align: center;
-  padding: 10rem; }
+  padding: 10rem 0;
+  max-width: 114rem;
+  margin: auto; }
   .stack__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 8rem;
     justify-items: center; }
   .stack__icon {
     width: 8rem;
@@ -41,17 +47,20 @@
 
 .projects {
   text-align: center;
-  padding: 10rem; }
+  padding: 10rem 0;
+  max-width: 114rem;
+  margin: auto; }
   .projects__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
-    grid-row-gap: 4.7rem;
+    grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+    grid-gap: 4.7rem;
     justify-items: center; }
 
 .footer {
-  padding: 10rem;
-  padding-bottom: 0;
+  padding-top: 10rem;
   font-size: 1.8rem;
+  max-width: 114rem;
+  margin: auto;
   font-family: "Poppins", sans-serif;
   color: #42446E; }
   .footer__contact-box {
@@ -64,7 +73,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 0 0 50%;
+    flex: 0 0 55%;
     flex-wrap: wrap; }
   .footer__nav-box {
     display: flex;
@@ -151,7 +160,7 @@ body {
   width: 37rem;
   border-radius: 2rem;
   overflow: hidden;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.15); }
   .card__photo {
     width: 100%;
     height: 45%;
