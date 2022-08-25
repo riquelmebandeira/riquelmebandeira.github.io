@@ -18,6 +18,27 @@
   }
 }
 
+.about {
+  @include flex-total-center;
+  padding: 8rem 15rem;
+
+  &__name {
+    background-image: linear-gradient(to right, $color-blue-light, $color-purple-light);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  &__profile-picture {
+    background: 
+    linear-gradient(to bottom, $color-pink-light, $color-blue-light) border-box;
+    border-radius: 50em;
+    border: 8px solid transparent;
+    width: 35rem;
+    height: 35rem;
+  }
+}
+
 .section-stack {
   text-align: center;
   padding: 10rem;
@@ -83,6 +104,10 @@
 .logo-box {
   text-align: center;
   font-family: $font-display;
+  background-image: linear-gradient(to right, $color-pink-light, $color-blue-light);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 
   .logo {
     font-size: 3.5rem;

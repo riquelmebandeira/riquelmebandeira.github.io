@@ -19,7 +19,13 @@ body {
 
 .heading {
   font-family: $font-display;
-
+  
+  &--1 {
+    font-weight: 700;
+    font-size: 3.8rem;
+    color: $color-grey-dark
+  }
+  
   &--2 {
     font-weight: 700;
     font-size: 3.5rem;

@@ -10,6 +10,23 @@
   .header nav li {
     margin-right: 5rem; }
 
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 15rem; }
+  .about__name {
+    background-image: linear-gradient(to right, #00C0FD, #6d5dde);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+  .about__profile-picture {
+    background: linear-gradient(to bottom, #E70FAA, #00C0FD) border-box;
+    border-radius: 50em;
+    border: 8px solid transparent;
+    width: 35rem;
+    height: 35rem; }
+
 .section-stack {
   text-align: center;
   padding: 10rem; }
@@ -65,7 +82,11 @@
 
 .logo-box {
   text-align: center;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to right, #E70FAA, #00C0FD);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; }
   .logo-box .logo {
     font-size: 3.5rem;
     letter-spacing: 2px; }
@@ -89,6 +110,10 @@ body {
 
 .heading {
   font-family: "Poppins", sans-serif; }
+  .heading--1 {
+    font-weight: 700;
+    font-size: 3.8rem;
+    color: #42446E; }
   .heading--2 {
     font-weight: 700;
     font-size: 3.5rem;
