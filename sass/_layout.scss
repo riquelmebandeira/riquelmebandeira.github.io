@@ -1,21 +1,23 @@
 .header {
   display: flex;
   align-items: center;
+
   padding: 3rem 0;
   max-width: 114rem;
   margin: auto;
+  position: relative;
 
   font-size: 1.8rem;
   font-family: $font-display;
   color: $color-grey-dark;
 
-  div {
+  .logo-box {
     margin-right: auto;
   }
 
-  nav {
-    li {
-      margin-right: 5rem;
+  @media only screen and (max-width: 48em) {
+    nav {
+      display: none;
     }
   }
 }
@@ -34,12 +36,25 @@
   }
 
   &__profile-picture {
-    background: 
+    background:
     linear-gradient(to bottom, $color-pink-light, $color-blue-light) border-box;
     border-radius: 50em;
     border: 8px solid transparent;
     width: 35rem;
     height: 35rem;
+  }
+
+  @media only screen and (max-width: 43.7em) {
+    flex-direction: column;
+    padding: 4rem 0;
+    text-align: center;
+
+    &__profile-picture {
+      order: -1;
+      margin-bottom: 4rem;
+      width: 25rem;
+      height: 25rem;
+    }
   }
 }
 
@@ -93,14 +108,41 @@
 
   &__contact-list {
     @include flex-total-center;
-    flex: 0 0 55%;
-    flex-wrap: wrap;
+    width: 60rem;
   }
 
   &__nav-box {
     @include flex-total-center;
-    flex-wrap: wrap;
     padding: 6rem 0;
+  }
+
+  @media only screen and (max-width: 45.9em) {
+    &__contact-box {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+
+    &__contact-list {
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 60%;
+      margin: 2rem 0;
+
+      li {
+        margin: 1rem 0;
+      }
+    }
+
+    &__nav-box {
+      flex-direction: column;
+      text-align: center;
+
+      nav {
+        display: none;
+      }
+    }
   }
 }
 

@@ -4,13 +4,15 @@
   padding: 3rem 0;
   max-width: 114rem;
   margin: auto;
+  position: relative;
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   color: #42446E; }
-  .header div {
+  .header .logo-box {
     margin-right: auto; }
-  .header nav li {
-    margin-right: 5rem; }
+  @media only screen and (max-width: 48em) {
+    .header nav {
+      display: none; } }
 
 .about {
   display: flex;
@@ -30,6 +32,16 @@
     border: 8px solid transparent;
     width: 35rem;
     height: 35rem; }
+  @media only screen and (max-width: 43.7em) {
+    .about {
+      flex-direction: column;
+      padding: 4rem 0;
+      text-align: center; }
+      .about__profile-picture {
+        order: -1;
+        margin-bottom: 4rem;
+        width: 25rem;
+        height: 25rem; } }
 
 .stack {
   text-align: center;
@@ -73,14 +85,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 0 0 55%;
-    flex-wrap: wrap; }
+    width: 60rem; }
   .footer__nav-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     padding: 6rem 0; }
+  @media only screen and (max-width: 45.9em) {
+    .footer__contact-box {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0; }
+    .footer__contact-list {
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 60%;
+      margin: 2rem 0; }
+      .footer__contact-list li {
+        margin: 1rem 0; }
+    .footer__nav-box {
+      flex-direction: column;
+      text-align: center; }
+      .footer__nav-box nav {
+        display: none; } }
 
 .horizontal-line {
   background-color: rgba(102, 102, 102, 0.3);
@@ -111,7 +139,14 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  padding: 0 6rem; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 56em) {
+    html {
+      font-size: 43%; } }
 
 body {
   box-sizing: border-box; }
@@ -128,7 +163,7 @@ body {
     color: #42446E; }
   .heading--3 {
     font-weight: 500;
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     color: #000; }
   .heading--4 {
     font-weight: 400;
@@ -149,6 +184,7 @@ body {
 
 .inline-list {
   display: flex;
+  align-items: center;
   list-style: none; }
   .inline-list a:link,
   .inline-list a:visited {
@@ -156,8 +192,8 @@ body {
     text-decoration: none; }
 
 .card {
-  height: 56rem;
-  width: 37rem;
+  height: 52rem;
+  width: 34rem;
   border-radius: 2rem;
   overflow: hidden;
   box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.15); }
@@ -176,7 +212,7 @@ body {
     .card__details span {
       display: inline-block;
       font-family: "Poppins", sans-serif;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-weight: 400;
       color: #42446E;
       margin-bottom: 2.1rem; }
@@ -198,11 +234,20 @@ body {
     color: #666666;
     text-decoration: none; }
 
-.nav ul {
-  flex-wrap: wrap; }
-
 .nav li:not(:last-child) {
   margin-right: 5rem; }
+
+@media only screen and (max-width: 48em) {
+  .menu__icon, .menu__icon::before, .menu__icon::after {
+    content: "";
+    width: 7px;
+    height: 5px;
+    display: block;
+    background-color: #666666; }
+  .menu__icon::before {
+    transform: translateY(-1.3rem); }
+  .menu__icon::after {
+    transform: translateY(0.6rem); } }
 
 .contact-icons {
   font-size: 3rem; }

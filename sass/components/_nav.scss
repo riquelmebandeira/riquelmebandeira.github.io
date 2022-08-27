@@ -1,11 +1,43 @@
 .nav {
-  ul {
-    flex-wrap: wrap;
-  }
 
   li {
     &:not(:last-child) {
       margin-right: 5rem;
     }
   }
+}
+
+//////////////////////////////
+// MENU HAMBURGUER
+.menu {
+  
+  @media only screen and (max-width: 48em) {
+    &__toggle {
+      // position: absolute;
+      // top: 10rem;
+      // right: 10rem;
+    }
+
+    &__icon,
+    &__icon::before,
+    &__icon::after {
+      content: "";
+      width: 7px;
+      height: 5px;
+      display: block;
+      background-color: $color-grey-light;
+    }
+
+    &__icon::before { transform: translateY(-1.3rem); }
+    &__icon::after { transform: translateY(.6rem); }
+  }
+}
+
+.menu.on {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // background-color: blue;
+  // width: 100vw;
+  // height: 100vh;
 }

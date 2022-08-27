@@ -7,7 +7,16 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // 10px
+  padding: 0 6rem;
+
+  @media only screen and (max-width: 75em) {  // 1200px
+    font-size: 50%; // 8px
+  }
+
+  @media only screen and (max-width: 56em) {  // 900px
+    font-size: 43%; // 7px
+  }
 }
 
 body {
@@ -34,7 +43,7 @@ body {
 
   &--3 {
     font-weight: 500;
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     color: $color-black
   }
 
@@ -55,6 +64,7 @@ body {
 
 .inline-list {
   display: flex;
+  align-items: center;
   list-style: none;
 
   a:link,
