@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
 
-  padding: 3rem 0;
-  max-width: 114rem;
+  padding: 3rem;
+  max-width: 120rem;
   margin: auto;
   position: relative;
 
@@ -16,6 +16,7 @@
   }
 
   @media only screen and (max-width: 48em) {
+
     nav {
       display: none;
     }
@@ -24,8 +25,8 @@
 
 .about {
   @include flex-total-center;
-  padding: 8rem 0;
-  max-width: 114rem;
+  padding: 8rem 3rem;
+  max-width: 120rem;
   margin: auto;
 
   &__name {
@@ -44,9 +45,8 @@
     height: 35rem;
   }
 
-  @media only screen and (max-width: 43.7em) {
+  @media only screen and (max-width: 53.7em) {
     flex-direction: column;
-    padding: 4rem 0;
     text-align: center;
 
     &__profile-picture {
@@ -61,13 +61,13 @@
 .stack {
   text-align: center;
   padding: 10rem 0;
-  max-width: 114rem;
+  max-width: 120rem;
   margin: auto;
 
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    grid-gap: 8rem;
+    grid-gap: 10rem;
     justify-items: center;
   }
 
@@ -79,23 +79,24 @@
 
 .projects {
   text-align: center;
-  padding: 10rem 0;
-  max-width: 114rem;
+  padding: 10rem 0rem;
+  max-width: 120rem;
   margin: auto;
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     grid-gap: 4.7rem;
     justify-items: center;
   }
 }
 
 .footer {
-  padding-top: 10rem;
+  padding: 0 3rem;
   font-size: 1.8rem;
-  max-width: 114rem;
+  max-width: 120rem;
   margin: auto;
+  margin-top: 6rem;
 
   font-family: $font-display;
   color: $color-grey-dark;
@@ -116,7 +117,8 @@
     padding: 6rem 0;
   }
 
-  @media only screen and (max-width: 45.9em) {
+  @media only screen and (max-width: 50em) {
+
     &__contact-box {
       flex-direction: column;
       justify-content: center;

@@ -9,35 +9,85 @@
 
 //////////////////////////////
 // MENU HAMBURGUER
-.menu {
-  
-  @media only screen and (max-width: 48em) {
-    &__toggle {
-      // position: absolute;
-      // top: 10rem;
-      // right: 10rem;
-    }
-
-    &__icon,
-    &__icon::before,
-    &__icon::after {
-      content: "";
-      width: 7px;
-      height: 5px;
-      display: block;
-      background-color: $color-grey-light;
-    }
-
-    &__icon::before { transform: translateY(-1.3rem); }
-    &__icon::after { transform: translateY(.6rem); }
+@media only screen and (max-width: 48em) {
+  .one,
+  .two,
+  .three {
+    background-color: $color-blue-light;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition: all .2s;
   }
-}
 
-.menu.on {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // background-color: blue;
-  // width: 100vw;
-  // height: 100vh;
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    top: 27px;
+    right: 36px;
+    position: absolute;
+  }
+
+  // fullscreen
+  .menu-section.on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100vw;
+    height: 100vh;
+
+    background-image: linear-gradient(to bottom right, $color-blue-light, $color-purple-light);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-section.on nav {
+    margin-top: -1.5rem;
+    display: block;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+  }
+
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(9px, -9px);
+  }
+
+  .menu-section.on nav ul {
+    text-align: center;
+    display: block;
+    
+    li {
+      margin-right: 0;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .menu-section.on nav a {
+    transition-duration: .5s;
+    text-align: center;
+    display: block;
+    font-size: 3rem;
+    line-height: 8rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
 }

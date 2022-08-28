@@ -1,8 +1,8 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 3rem 0;
-  max-width: 114rem;
+  padding: 3rem;
+  max-width: 120rem;
   margin: auto;
   position: relative;
   font-size: 1.8rem;
@@ -18,8 +18,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8rem 0;
-  max-width: 114rem;
+  padding: 8rem 3rem;
+  max-width: 120rem;
   margin: auto; }
   .about__name {
     background-image: linear-gradient(to right, #00C0FD, #6d5dde);
@@ -32,10 +32,9 @@
     border: 8px solid transparent;
     width: 35rem;
     height: 35rem; }
-  @media only screen and (max-width: 43.7em) {
+  @media only screen and (max-width: 53.7em) {
     .about {
       flex-direction: column;
-      padding: 4rem 0;
       text-align: center; }
       .about__profile-picture {
         order: -1;
@@ -46,12 +45,12 @@
 .stack {
   text-align: center;
   padding: 10rem 0;
-  max-width: 114rem;
+  max-width: 120rem;
   margin: auto; }
   .stack__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    grid-gap: 8rem;
+    grid-gap: 10rem;
     justify-items: center; }
   .stack__icon {
     width: 8rem;
@@ -59,20 +58,21 @@
 
 .projects {
   text-align: center;
-  padding: 10rem 0;
-  max-width: 114rem;
+  padding: 10rem 0rem;
+  max-width: 120rem;
   margin: auto; }
   .projects__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     grid-gap: 4.7rem;
     justify-items: center; }
 
 .footer {
-  padding-top: 10rem;
+  padding: 0 3rem;
   font-size: 1.8rem;
-  max-width: 114rem;
+  max-width: 120rem;
   margin: auto;
+  margin-top: 6rem;
   font-family: "Poppins", sans-serif;
   color: #42446E; }
   .footer__contact-box {
@@ -91,7 +91,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 6rem 0; }
-  @media only screen and (max-width: 45.9em) {
+  @media only screen and (max-width: 50em) {
     .footer__contact-box {
       flex-direction: column;
       justify-content: center;
@@ -139,14 +139,13 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
-  padding: 0 6rem; }
+  font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
-      font-size: 50%; } }
+      font-size: 56%; } }
   @media only screen and (max-width: 56em) {
     html {
-      font-size: 43%; } }
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
@@ -238,16 +237,59 @@ body {
   margin-right: 5rem; }
 
 @media only screen and (max-width: 48em) {
-  .menu__icon, .menu__icon::before, .menu__icon::after {
-    content: "";
-    width: 7px;
+  .one,
+  .two,
+  .three {
+    background-color: #00C0FD;
     height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition: all .2s; }
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    top: 27px;
+    right: 36px;
+    position: absolute; }
+  .menu-section.on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #00C0FD, #6d5dde);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .menu-section.on nav {
+    margin-top: -1.5rem;
+    display: block; }
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    top: 25px;
+    right: 40px; }
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px); }
+  .menu-section.on .menu-toggle .two {
+    opacity: 0; }
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(9px, -9px); }
+  .menu-section.on nav ul {
+    text-align: center;
+    display: block; }
+    .menu-section.on nav ul li {
+      margin-right: 0; }
+    .menu-section.on nav ul ul {
+      display: flex;
+      justify-content: space-between; }
+  .menu-section.on nav a {
+    transition-duration: .5s;
+    text-align: center;
     display: block;
-    background-color: #666666; }
-  .menu__icon::before {
-    transform: translateY(-1.3rem); }
-  .menu__icon::after {
-    transform: translateY(0.6rem); } }
+    font-size: 3rem;
+    line-height: 8rem;
+    text-transform: uppercase;
+    color: #fff; } }
 
 .contact-icons {
   font-size: 3rem; }

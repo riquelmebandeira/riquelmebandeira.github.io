@@ -8,14 +8,13 @@
 
 html {
   font-size: 62.5%; // 10px
-  padding: 0 6rem;
 
   @media only screen and (max-width: 75em) {  // 1200px
-    font-size: 50%; // 8px
+    font-size: 56%; // 9px
   }
 
   @media only screen and (max-width: 56em) {  // 900px
-    font-size: 43%; // 7px
+    font-size: 50%; // 8px
   }
 }
 
